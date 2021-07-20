@@ -54,6 +54,8 @@ namespace StudioSpaDay.Controllers
                     appropriateFacials.Add(facials[i]);
                 }
             }
+            ViewBag.skintype = skintype;
+            ViewBag.appropriateFacials = appropriateFacials;
             return View();
         }
 
