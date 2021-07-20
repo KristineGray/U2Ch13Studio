@@ -8,6 +8,13 @@
     <p>@ViewBag.name</p>
 </div>
 <div id="servicesMenu">
+    <p>@ViewBag.skintype</p>
+    <ul>
+        @foreach(string treatment in ViewBag.appropriateFacials)
+            {
+                <li>@treatment</li>
+            }
+    </ul>
 </div>
 
 <h1>Fancy Spa</h1>
